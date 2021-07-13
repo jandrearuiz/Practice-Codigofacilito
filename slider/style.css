@@ -1,0 +1,43 @@
+.slider {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.slider .container {
+    white-space: nowrap;
+    position: relative;
+    transition: all .3s;
+    left: 0;
+}
+.controls ul {
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    margin: 0;
+    width: 100%;
+    z-index: 5;
+}
+.controls li {
+    list-style: none;
+    background-color: teal;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.controls li.active{
+    background: cyan;
+}
+.slider .container * {
+    white-space: normal;
+}
+.slider .image {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin-right: -4px;
+}

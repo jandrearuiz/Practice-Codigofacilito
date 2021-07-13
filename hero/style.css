@@ -1,0 +1,36 @@
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+  height: 75vh;
+  background: url(./image.jpg), blue;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: #183b3b;
+  text-shadow: 0px 0px 4px #f7f7f7;
+  align-items: center;
+  position: relative;
+}
+/* para colocarle color de fondo a una imagen*/
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(50, 74, 180, 0.3);
+}
+.hero__title {
+  margin: 0;
+  font-size: 3em;
+  position: relative;
+}
+.hero__description {
+  font-size: 1.5em;
+  position: relative;
+}
